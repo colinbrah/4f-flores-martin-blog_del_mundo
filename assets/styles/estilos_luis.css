@@ -1,0 +1,29 @@
+body{ 
+
+  color: aliceblue;  
+  background-color: black;
+  font-size: 16px;
+  
+}
+
+article{ background-color: rgb(44, 43, 43);}
+
+.resaltado { color: yellow;}
+
+#texto_resaltado  { 
+
+
+text-align: center;
+
+
+font-size: 3rem;
+
+  }
+
+
+ 
+
+
+
+
+
