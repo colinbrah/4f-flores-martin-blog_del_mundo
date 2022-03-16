@@ -1,29 +1,43 @@
-body{ 
-
-  color: aliceblue;  
-  background-color: black;
-  font-size: 16px;
-  
-}
-
-article{ background-color: rgb(44, 43, 43);}
-
-.resaltado { color: yellow;}
-
-#texto_resaltado  { 
-
-
-text-align: center;
-
-
-font-size: 3rem;
-
-  }
+   /*Clases generales*/
 
 
  
+body{color: aliceblue;  
+  background-color: black;
+  font-size: 16px;}
 
 
 
 
 
+article{ background-color: rgb(44, 43, 43); padding: 1.5rem; border-bottom:  10px solid #ffffff;} .resaltado { color: yellow;}
+
+
+/*Terminan clases generales*/
+
+#texto_resaltado  {text-align: center;font-size: 3rem;}
+
+
+/*Inicia footer del blog*/
+#footer_blog{border: 2rem white;}
+/*Termina footer del blog*/
+
+
+
+
+/*Inician ilustraciones*/
+figure{border: 4px solid white; }
+.ilustracion figcaption{margin-top: 1rem;
+  margin-left: 1rem;
+  font-style: italic;}
+  /*Terminan Ilustraciones*/
+
+
+/* Barra de navegación*/
+
+nav>ul>li {list-style: none;}
+
+nav>ul>li>a {text-decoration: none;}
+
+
+/*Termina la barra de navegación*/
