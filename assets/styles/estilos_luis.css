@@ -1,43 +1,131 @@
-   /*Clases generales*/
+/*Clases generales*/
 
 
- 
-body{color: aliceblue;  
+
+body {
+  color: aliceblue;
   background-color: black;
-  font-size: 16px;}
+  font-size: 16px;
+}
 
 
 
 
 
-article{ background-color: rgb(44, 43, 43); padding: 1.5rem; border-bottom:  10px solid #ffffff;} .resaltado { color: yellow;}
+article {
+  background-color: rgb(44, 43, 43);
+  padding: 1.5rem;
+  border-bottom: 10px solid #ffffff;
+}
 
 
 /*Terminan clases generales*/
 
-#texto_resaltado  {text-align: center;font-size: 3rem;}
 
+/* barra de navegación */
+
+.resaltado {
+  color: yellow;
+}
+
+
+#texto_resaltado {
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+nav>ul>li {
+  list-style: none;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+}
+
+
+
+
+/*Fin la barra de navegación*/
 
 /*Inicia footer del blog*/
-#footer_blog{border: 2rem white;}
+#footer_blog {
+  border: 2rem white;
+}
+
 /*Termina footer del blog*/
 
 
 
 
 /*Inician ilustraciones*/
-figure{border: 4px solid white; }
-.ilustracion figcaption{margin-top: 1rem;
+figure {
+  border: 4px solid white;
+}
+
+.ilustracion figcaption {
+  margin-top: 1rem;
   margin-left: 1rem;
-  font-style: italic;}
-  /*Terminan Ilustraciones*/
+  font-style: italic;
+}
+
+/*Terminan Ilustraciones*/
 
 
-/* Barra de navegación*/
-
-nav>ul>li {list-style: none;}
-
-nav>ul>li>a {text-decoration: none;}
 
 
-/*Termina la barra de navegación*/
+
+
+/* grid */
+section {
+
+  /* despliégate como  grid */
+  display: grid;
+  /* Crea 12 columnas cada una de una fracción usando la función repeat*/
+  grid-template-columns: repeat(12, 1fr);
+  /* deja que las filas(renglones) ocupen el alto que necesitan */
+  grid-auto-rows: auto;
+  /* añade un espacio entre los elementos del grid de 3rem */
+  gap: 3rem;
+}
+
+
+/* apunta sólo a los headers que son los hijos de section */
+section>header {
+
+  /* esta sección se extenderá 12 columnas*/
+
+  grid-column: span 12;
+
+}
+
+/* apunta sólo a los headers que son los hijos de section */
+section>main {
+
+  /* esta sección se extenderá 12 columnas*/
+
+  grid-column: span 8;
+
+}
+
+/* apunta sólo a los headers que son los hijos de section */
+section>aside {
+
+  /* esta sección se extenderá 12 columnas*/
+
+  grid-column: span 4;
+
+}
+
+
+/* apunta sólo a los headers que son los hijos de section */
+section>footer {
+
+  /* esta sección se extenderá 12 columnas*/
+
+  grid-column: span 12;
+
+}
+
+
+/* Termina grid */
